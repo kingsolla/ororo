@@ -168,7 +168,7 @@ const runCycle = async (context, cycleCount, amountToSwap) => {
 // --- Main Function ---
 const main = async () => {
   console.log(chalk.magenta(BANNER));
-  console.log(chalk.magenta('      LETS FUCK THIS TESTNET BY KAZUHA )      '));
+  console.log(chalk.magenta('       )      '));
   console.log(chalk.magenta('==========================================='));
 
   if (!MNEMONIC) {
