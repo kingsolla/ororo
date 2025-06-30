@@ -19,9 +19,9 @@ const EXPLORER_URL = "https://www.zigscan.org/tx/";
 const ZIG_DENOM = "uzig";
 const ORO_DENOM = "coin.zig10rfjm85jmzfhravjwpq3hcdz8ngxg7lxd0drkr.uoro";
 const ZIG_AMOUNT_FOR_LP = "150000"; // 0.15 ZIG
-const DELAY_BETWEEN_STEPS = 10; // seconds
-const DELAY_BETWEEN_CYCLES = 10; // seconds
-const DELAY_AFTER_ERROR = 20; // seconds
+const DELAY_BETWEEN_STEPS = 5; // seconds
+const DELAY_BETWEEN_CYCLES = 5; // seconds
+const DELAY_AFTER_ERROR = 10; // seconds
 const RETRY_DELAY_HOURS = 1; // Fixed retry delay for insufficient funds
 
 // --- Banner ---
