@@ -156,11 +156,16 @@ const runCycle = async (context, cycleCount, amountToSwap) => {
   console.log(chalk.green(`\nCycle #${cycleCount} completed successfully!`));
 };
 
-
+const main = async () => {
   if (!MNEMONIC) {
-    console.error(chalk.red('FATAL: MNEMONIC phrase not found in .env file. Bot is stopping.'));
+    console.error('No mnemonic!');
     return;
   }
+
+  // lanjutkan logic...
+};
+
+main();
 
   // --- Get user input for swap amount ---
   let amountToSwap;
