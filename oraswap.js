@@ -24,15 +24,6 @@ const DELAY_BETWEEN_CYCLES = 5; // seconds
 const DELAY_AFTER_ERROR = 10; // seconds
 const RETRY_DELAY_HOURS = 1; // Fixed retry delay for insufficient funds
 
-// --- Banner ---
-const BANNER = `
- ██████╗ ██████╗  █████╗ ███████╗██╗    ██╗ █████╗ ██████╗ 
-██╔═══██╗██╔══██╗██╔══██╗██╔════╝██║    ██║██╔══██╗██╔══██╗
-██║   ██║██████╔╝███████║███████╗██║ █╗ ██║███████║██████╔╝
-██║   ██║██╔══██╗██╔══██║╚════██║██║███╗██║██╔══██║██╔═══╝ 
-╚██████╔╝██║  ██║██║  ██║███████║╚███╔███╔╝██║  ██║██║     
- ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝     
-`;
 
 // --- Utility Functions ---
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
