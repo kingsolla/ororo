@@ -162,18 +162,13 @@ const main = async () => {
     return;
   }
 
-  // lanjutkan logic...
-};
-
-main();
-
   // --- Get user input for swap amount ---
   let amountToSwap;
   while (true) {
     const userInput = await askQuestion(chalk.cyan('Enter the amount to swap in ZIG (e.g., 0.25): '));
     const parsedAmount = parseFloat(userInput);
     if (!isNaN(parsedAmount) && parsedAmount > 0) {
-      amountToSwap = (parsedAmount * 1000000).toString(); // Convert to smallest unit
+      amountToSwap = (parsedAmount * 1000000).toString();
       console.log(chalk.green(`> Swap amount set to ${parsedAmount} ZIG.`));
       break;
     } else {
@@ -217,11 +212,11 @@ main();
         if (errorMsg.includes("insufficient funds")) {
           console.log(chalk.yellow('> Insufficient funds detected. Use the faucet if needed.'));
           await runCountdown(RETRY_DELAY_HOURS);
-          cycleCount--; // Retry the same cycle
+          cycleCount--;
         } else {
           console.log(chalk.yellow(`> Unexpected error. Retrying in ${DELAY_AFTER_ERROR} seconds...`));
           await sleep(DELAY_AFTER_ERROR * 1000);
-          cycleCount--; // Retry the same cycle
+          cycleCount--;
         }
       }
     }
@@ -232,4 +227,4 @@ main();
   }
 };
 
-main();
+main(); 
