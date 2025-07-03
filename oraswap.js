@@ -165,11 +165,6 @@ const runCycle = async (context, cycleCount, amountToSwap) => {
   console.log(chalk.green(`\nCycle #${cycleCount} completed successfully!`));
 };
 
-// --- Main Function ---
-const main = async () => {
-  console.log(chalk.magenta(BANNER));
-  console.log(chalk.magenta('       )      '));
-  console.log(chalk.magenta('==========================================='));
 
   if (!MNEMONIC) {
     console.error(chalk.red('FATAL: MNEMONIC phrase not found in .env file. Bot is stopping.'));
